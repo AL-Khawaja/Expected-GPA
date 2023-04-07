@@ -6,6 +6,8 @@ function calculateGPA() {
   const expectedGPA = Number(document.getElementById("expected-gpa").value);
 
   const x = ((expectedGPA * allCredits) - (passedCredits * currentGPA)) / (allCredits - passedCredits);
-  alert("You should get ("+x.toFixed(2) +") in every course to let your GPA = "+expectedGPA);
+  
+  if(x.toFixed(2)>100) alert("بتحلم قاعد يحبيبي؟ منتا قاطع ساعات كثير بزبطش معك");
+  else alert("You should get ("+x.toFixed(2) +") in every course to let your GPA = "+expectedGPA);
 
 }
