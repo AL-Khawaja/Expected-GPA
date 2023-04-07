@@ -14,23 +14,23 @@
 
         <form>
             <div class="input-box">
-                <input type="text" id="current-gpa" name="current-gpa" pattern="[0-9\.]+" required><br>
+                <input type="text" id="current-gpa" name="current-gpa" onchange="myFunction1()" pattern="[0-9\. ]+" required ><br>
                 <label for="current-gpa">Current GPA:</label>
             </div>
             <br><br>
             <div class="input-box">
-                <input type="text" id="passed-credits" name="passed-credits" pattern="[0-9\.]+" required><br>
+                <input type="text" id="passed-credits" name="passed-credits" onchange="myFunction2()" pattern="[0-9\. ]+" required><br>
                 <label for="passed-credits">Number of Passed Credits:</label>
             </div>
             <br><br>
             <div class="input-box">
-                <input type="text" id="all-credits" name="all-credits" pattern="[0-9\.]+" required><br>
+                <input type="text" id="all-credits" name="all-credits" onchange="myFunction3()" pattern="[0-9\. ]+" required><br>
                 <label for="all-credits">Number of All Credits:</label>
             </div>
             <br><br>
 
             <div class="input-box">
-                <input type="text" id="expected-gpa" name="expected-gpa" pattern="[0-9\.]+" required><br>
+                <input type="text" id="expected-gpa" name="expected-gpa" onchange="myFunction4()" pattern="[0-9\. ]+" required><br>
                 <label for="expected-gpa">Expected GPA:</label>
             </div>
           <a href="#" onclick="calculateGPA()">
@@ -45,6 +45,14 @@
 
     </div>
 
+
+      <div id="myAlert" class="alert">
+        <div class="alert-header">Be Aware!</div>
+        <div class="alert-message">This is the alert message.</div>
+        <button class="alert-button" onclick="closeAlert()">OK</button>
+      </div>
+
+      
   </body>
 </html>
 
