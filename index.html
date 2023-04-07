@@ -14,23 +14,23 @@
 
         <form>
             <div class="input-box">
-                <input type="number" id="current-gpa" name="current-gpa" required=""><br>
+                <input type="text" id="current-gpa" name="current-gpa" pattern="[0-9\.]+" required><br>
                 <label for="current-gpa">Current GPA:</label>
             </div>
             <br><br>
             <div class="input-box">
-                <input type="number" id="passed-credits" name="passed-credits" required=""><br>
+                <input type="text" id="passed-credits" name="passed-credits" pattern="[0-9\.]+" required><br>
                 <label for="passed-credits">Number of Passed Credits:</label>
             </div>
             <br><br>
             <div class="input-box">
-                <input type="number" id="all-credits" name="all-credits" required=""><br>
+                <input type="text" id="all-credits" name="all-credits" pattern="[0-9\.]+" required><br>
                 <label for="all-credits">Number of All Credits:</label>
             </div>
             <br><br>
 
             <div class="input-box">
-                <input type="number" id="expected-gpa" name="expected-gpa" required=""><br>
+                <input type="text" id="expected-gpa" name="expected-gpa" pattern="[0-9\.]+" required><br>
                 <label for="expected-gpa">Expected GPA:</label>
             </div>
           <a href="#" onclick="calculateGPA()">

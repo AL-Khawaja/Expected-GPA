@@ -6,6 +6,6 @@ function calculateGPA() {
   const expectedGPA = Number(document.getElementById("expected-gpa").value);
 
   const x = ((expectedGPA * allCredits) - (passedCredits * currentGPA)) / (allCredits - passedCredits);
-  alert(x.toFixed(2));
+  alert("You should get ("+x.toFixed(2) +") in every course to let your GPA = "+expectedGPA);
 
 }
